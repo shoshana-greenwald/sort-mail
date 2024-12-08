@@ -652,3 +652,4 @@ public static double ChiSquarePval(double x, int df)
 •	ניתוח מורפולוגי: 
 המנוע המתקדם לא רק מנרמל את המילים אלא גם מציין את חלקי הדיבור שלהם (שם עצם, פועל, שייכות וכ"ו )
 
+[ספר פרויקט צ'אט.pdf](https://github.com/user-attachments/files/18052331/default.pdf)
