@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TextClassificationProjectModelStoreContainer" CdmEntityContainer="TextClassificationProjectEntities">
+    <EntitySetMapping Name="AlgorithmMistake_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.AlgorithmMistake_tbl">
+        <MappingFragment StoreEntitySet="AlgorithmMistake_tbl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="oldSubject" ColumnName="oldSubject" />
+          <ScalarProperty Name="newSubject" ColumnName="newSubject" />
+          <ScalarProperty Name="AmountOfMistakes" ColumnName="AmountOfMistakes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BaseWord_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.BaseWord_tbl">
+        <MappingFragment StoreEntitySet="BaseWord_tbl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="base" ColumnName="base" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactForSubject_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.ContactForSubject_tbl">
+        <MappingFragment StoreEntitySet="ContactForSubject_tbl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="contactManID" ColumnName="contactManID" />
+          <ScalarProperty Name="subjectId" ColumnName="subjectId" />
+          <ScalarProperty Name="contactWeight" ColumnName="contactWeight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactMan_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.ContactMan_tbl">
+        <MappingFragment StoreEntitySet="ContactMan_tbl">
+          <ScalarProperty Name="contactManId" ColumnName="contactManId" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="describeContact" ColumnName="describeContact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Email_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.Email_tbl">
+        <MappingFragment StoreEntitySet="Email_tbl">
+          <ScalarProperty Name="mailID" ColumnName="mailID" />
+          <ScalarProperty Name="IdInOutLook" ColumnName="IdInOutLook" />
+          <ScalarProperty Name="toUserId" ColumnName="toUserId" />
+          <ScalarProperty Name="fromName" ColumnName="fromName" />
+          <ScalarProperty Name="fromAddressMail" ColumnName="fromAddressMail" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="dateReceived" ColumnName="dateReceived" />
+          <ScalarProperty Name="subjectMail" ColumnName="subjectMail" />
+          <ScalarProperty Name="RelatedSentence" ColumnName="RelatedSentence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subject_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.Subject_tbl">
+        <MappingFragment StoreEntitySet="Subject_tbl">
+          <ScalarProperty Name="subjectId" ColumnName="subjectId" />
+          <ScalarProperty Name="subjectName" ColumnName="subjectName" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="color" ColumnName="color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UpdateKeySentence_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.UpdateKeySentence_tbl">
+        <MappingFragment StoreEntitySet="UpdateKeySentence_tbl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="mailID" ColumnName="mailID" />
+          <ScalarProperty Name="subjectId" ColumnName="subjectId" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="wordWeight" ColumnName="wordWeight" />
+          <ScalarProperty Name="isCommon" ColumnName="isCommon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UpdateKeySentenceForSemilar_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.UpdateKeySentenceForSemilar_tbl">
+        <MappingFragment StoreEntitySet="UpdateKeySentenceForSemilar_tbl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="mailID" ColumnName="mailID" />
+          <ScalarProperty Name="subjectId" ColumnName="subjectId" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="commonWeight" ColumnName="commonWeight" />
+          <ScalarProperty Name="commonAmount" ColumnName="commonAmount" />
+          <ScalarProperty Name="specialWeight" ColumnName="specialWeight" />
+          <ScalarProperty Name="specialAmount" ColumnName="specialAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UpdateSubject_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.UpdateSubject_tbl">
+        <MappingFragment StoreEntitySet="UpdateSubject_tbl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="mailID" ColumnName="mailID" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.User_tbl">
+        <MappingFragment StoreEntitySet="User_tbl">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Word_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.Word_tbl">
+        <MappingFragment StoreEntitySet="Word_tbl">
+          <ScalarProperty Name="wordId" ColumnName="wordId" />
+          <ScalarProperty Name="wordName" ColumnName="wordName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WordForSubject_tbl">
+      <EntityTypeMapping TypeName="TextClassificationProjectModel.WordForSubject_tbl">
+        <MappingFragment StoreEntitySet="WordForSubject_tbl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="subjectId" ColumnName="subjectId" />
+          <ScalarProperty Name="wordId" ColumnName="wordId" />
+          <ScalarProperty Name="wordWeight" ColumnName="wordWeight" />
+          <ScalarProperty Name="isCommon" ColumnName="isCommon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

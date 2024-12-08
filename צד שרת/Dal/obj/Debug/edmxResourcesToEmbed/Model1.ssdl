@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TextClassificationProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AlgorithmMistake_tbl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="oldSubject" Type="int" Nullable="false" />
+    <Property Name="newSubject" Type="int" Nullable="false" />
+    <Property Name="AmountOfMistakes" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BaseWord_tbl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="base" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactForSubject_tbl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="contactManID" Type="int" Nullable="false" />
+    <Property Name="subjectId" Type="int" Nullable="false" />
+    <Property Name="contactWeight" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactMan_tbl">
+    <Key>
+      <PropertyRef Name="contactManId" />
+    </Key>
+    <Property Name="contactManId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="describeContact" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Email_tbl">
+    <Key>
+      <PropertyRef Name="mailID" />
+    </Key>
+    <Property Name="mailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdInOutLook" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="toUserId" Type="int" Nullable="false" />
+    <Property Name="fromName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="fromAddressMail" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="30" />
+    <Property Name="body" Type="nvarchar" MaxLength="1000" />
+    <Property Name="dateReceived" Type="datetime" Nullable="false" />
+    <Property Name="subjectMail" Type="int" />
+    <Property Name="RelatedSentence" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Subject_tbl">
+    <Key>
+      <PropertyRef Name="subjectId" />
+    </Key>
+    <Property Name="subjectId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="subjectName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="parentID" Type="int" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="color" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="UpdateKeySentence_tbl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mailID" Type="int" Nullable="false" />
+    <Property Name="subjectId" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="wordWeight" Type="float" Nullable="false" />
+    <Property Name="isCommon" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UpdateKeySentenceForSemilar_tbl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mailID" Type="int" Nullable="false" />
+    <Property Name="subjectId" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="commonWeight" Type="float" Nullable="false" />
+    <Property Name="commonAmount" Type="int" Nullable="false" />
+    <Property Name="specialWeight" Type="float" Nullable="false" />
+    <Property Name="specialAmount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UpdateSubject_tbl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mailID" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="amount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User_tbl">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mail" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="userPassword" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Word_tbl">
+    <Key>
+      <PropertyRef Name="wordId" />
+    </Key>
+    <Property Name="wordId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="wordName" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WordForSubject_tbl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="subjectId" Type="int" Nullable="false" />
+    <Property Name="wordId" Type="int" Nullable="false" />
+    <Property Name="wordWeight" Type="float" Nullable="false" />
+    <Property Name="isCommon" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Algorithm__newSu__3C69FB99">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="1" />
+    <End Role="AlgorithmMistake_tbl" Type="Self.AlgorithmMistake_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="AlgorithmMistake_tbl">
+        <PropertyRef Name="newSubject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Algorithm__oldSu__3B75D760">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="1" />
+    <End Role="AlgorithmMistake_tbl" Type="Self.AlgorithmMistake_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="AlgorithmMistake_tbl">
+        <PropertyRef Name="oldSubject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ContactFo__conta__33D4B598">
+    <End Role="ContactMan_tbl" Type="Self.ContactMan_tbl" Multiplicity="1" />
+    <End Role="ContactForSubject_tbl" Type="Self.ContactForSubject_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactMan_tbl">
+        <PropertyRef Name="contactManId" />
+      </Principal>
+      <Dependent Role="ContactForSubject_tbl">
+        <PropertyRef Name="contactManID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ContactFo__subje__34C8D9D1">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="1" />
+    <End Role="ContactForSubject_tbl" Type="Self.ContactForSubject_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="ContactForSubject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Email_tbl__subje__38996AB5">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="0..1" />
+    <End Role="Email_tbl" Type="Self.Email_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="Email_tbl">
+        <PropertyRef Name="subjectMail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Email_tbl__toUse__37A5467C">
+    <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="1" />
+    <End Role="Email_tbl" Type="Self.Email_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_tbl">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="Email_tbl">
+        <PropertyRef Name="toUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Subject_t__paren__267ABA7A">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="0..1" />
+    <End Role="Subject_tbl1" Type="Self.Subject_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="Subject_tbl1">
+        <PropertyRef Name="parentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Subject_t__userI__276EDEB3">
+    <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="1" />
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_tbl">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="Subject_tbl">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UpdateKey__mailI__4222D4EF">
+    <End Role="Email_tbl" Type="Self.Email_tbl" Multiplicity="1" />
+    <End Role="UpdateKeySentence_tbl" Type="Self.UpdateKeySentence_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Email_tbl">
+        <PropertyRef Name="mailID" />
+      </Principal>
+      <Dependent Role="UpdateKeySentence_tbl">
+        <PropertyRef Name="mailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UpdateKey__mailI__45F365D3">
+    <End Role="Email_tbl" Type="Self.Email_tbl" Multiplicity="1" />
+    <End Role="UpdateKeySentenceForSemilar_tbl" Type="Self.UpdateKeySentenceForSemilar_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Email_tbl">
+        <PropertyRef Name="mailID" />
+      </Principal>
+      <Dependent Role="UpdateKeySentenceForSemilar_tbl">
+        <PropertyRef Name="mailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UpdateKey__subje__4316F928">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="1" />
+    <End Role="UpdateKeySentence_tbl" Type="Self.UpdateKeySentence_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="UpdateKeySentence_tbl">
+        <PropertyRef Name="subjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UpdateKey__subje__46E78A0C">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="1" />
+    <End Role="UpdateKeySentenceForSemilar_tbl" Type="Self.UpdateKeySentenceForSemilar_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="UpdateKeySentenceForSemilar_tbl">
+        <PropertyRef Name="subjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UpdateSub__mailI__3F466844">
+    <End Role="Email_tbl" Type="Self.Email_tbl" Multiplicity="1" />
+    <End Role="UpdateSubject_tbl" Type="Self.UpdateSubject_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Email_tbl">
+        <PropertyRef Name="mailID" />
+      </Principal>
+      <Dependent Role="UpdateSubject_tbl">
+        <PropertyRef Name="mailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__WordForSu__subje__2E1BDC42">
+    <End Role="Subject_tbl" Type="Self.Subject_tbl" Multiplicity="1" />
+    <End Role="WordForSubject_tbl" Type="Self.WordForSubject_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Principal>
+      <Dependent Role="WordForSubject_tbl">
+        <PropertyRef Name="subjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__WordForSu__wordI__2F10007B">
+    <End Role="Word_tbl" Type="Self.Word_tbl" Multiplicity="1" />
+    <End Role="WordForSubject_tbl" Type="Self.WordForSubject_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Word_tbl">
+        <PropertyRef Name="wordId" />
+      </Principal>
+      <Dependent Role="WordForSubject_tbl">
+        <PropertyRef Name="wordId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TextClassificationProjectModelStoreContainer">
+    <EntitySet Name="AlgorithmMistake_tbl" EntityType="Self.AlgorithmMistake_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseWord_tbl" EntityType="Self.BaseWord_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactForSubject_tbl" EntityType="Self.ContactForSubject_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactMan_tbl" EntityType="Self.ContactMan_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Email_tbl" EntityType="Self.Email_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subject_tbl" EntityType="Self.Subject_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UpdateKeySentence_tbl" EntityType="Self.UpdateKeySentence_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UpdateKeySentenceForSemilar_tbl" EntityType="Self.UpdateKeySentenceForSemilar_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UpdateSubject_tbl" EntityType="Self.UpdateSubject_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_tbl" EntityType="Self.User_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Word_tbl" EntityType="Self.Word_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WordForSubject_tbl" EntityType="Self.WordForSubject_tbl" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Algorithm__newSu__3C69FB99" Association="Self.FK__Algorithm__newSu__3C69FB99">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="AlgorithmMistake_tbl" EntitySet="AlgorithmMistake_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Algorithm__oldSu__3B75D760" Association="Self.FK__Algorithm__oldSu__3B75D760">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="AlgorithmMistake_tbl" EntitySet="AlgorithmMistake_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ContactFo__conta__33D4B598" Association="Self.FK__ContactFo__conta__33D4B598">
+      <End Role="ContactMan_tbl" EntitySet="ContactMan_tbl" />
+      <End Role="ContactForSubject_tbl" EntitySet="ContactForSubject_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ContactFo__subje__34C8D9D1" Association="Self.FK__ContactFo__subje__34C8D9D1">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="ContactForSubject_tbl" EntitySet="ContactForSubject_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Email_tbl__subje__38996AB5" Association="Self.FK__Email_tbl__subje__38996AB5">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="Email_tbl" EntitySet="Email_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Email_tbl__toUse__37A5467C" Association="Self.FK__Email_tbl__toUse__37A5467C">
+      <End Role="User_tbl" EntitySet="User_tbl" />
+      <End Role="Email_tbl" EntitySet="Email_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Subject_t__paren__267ABA7A" Association="Self.FK__Subject_t__paren__267ABA7A">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="Subject_tbl1" EntitySet="Subject_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Subject_t__userI__276EDEB3" Association="Self.FK__Subject_t__userI__276EDEB3">
+      <End Role="User_tbl" EntitySet="User_tbl" />
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UpdateKey__mailI__4222D4EF" Association="Self.FK__UpdateKey__mailI__4222D4EF">
+      <End Role="Email_tbl" EntitySet="Email_tbl" />
+      <End Role="UpdateKeySentence_tbl" EntitySet="UpdateKeySentence_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UpdateKey__mailI__45F365D3" Association="Self.FK__UpdateKey__mailI__45F365D3">
+      <End Role="Email_tbl" EntitySet="Email_tbl" />
+      <End Role="UpdateKeySentenceForSemilar_tbl" EntitySet="UpdateKeySentenceForSemilar_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UpdateKey__subje__4316F928" Association="Self.FK__UpdateKey__subje__4316F928">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="UpdateKeySentence_tbl" EntitySet="UpdateKeySentence_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UpdateKey__subje__46E78A0C" Association="Self.FK__UpdateKey__subje__46E78A0C">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="UpdateKeySentenceForSemilar_tbl" EntitySet="UpdateKeySentenceForSemilar_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UpdateSub__mailI__3F466844" Association="Self.FK__UpdateSub__mailI__3F466844">
+      <End Role="Email_tbl" EntitySet="Email_tbl" />
+      <End Role="UpdateSubject_tbl" EntitySet="UpdateSubject_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__WordForSu__subje__2E1BDC42" Association="Self.FK__WordForSu__subje__2E1BDC42">
+      <End Role="Subject_tbl" EntitySet="Subject_tbl" />
+      <End Role="WordForSubject_tbl" EntitySet="WordForSubject_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK__WordForSu__wordI__2F10007B" Association="Self.FK__WordForSu__wordI__2F10007B">
+      <End Role="Word_tbl" EntitySet="Word_tbl" />
+      <End Role="WordForSubject_tbl" EntitySet="WordForSubject_tbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

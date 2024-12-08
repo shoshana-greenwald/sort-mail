@@ -1,0 +1,36 @@
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\bin\Debug\Dal.dll.config
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\bin\Debug\Dal.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\bin\Debug\Dal.pdb
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\bin\Debug\EntityFramework.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\bin\Debug\EntityFramework.xml
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\obj\Debug\Dal.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\projecct\Dal\obj\Debug\Dal.pdb
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\bin\Debug\Dal.dll.config
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\bin\Debug\Dal.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\bin\Debug\Dal.pdb
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\bin\Debug\EntityFramework.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\bin\Debug\EntityFramework.xml
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\obj\Debug\Dal.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\projecct\Dal\obj\Debug\Dal.pdb
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\bin\Debug\Dal.dll.config
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\bin\Debug\Dal.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\bin\Debug\Dal.pdb
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\bin\Debug\EntityFramework.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\bin\Debug\EntityFramework.xml
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\obj\Debug\Dal.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\obj\Debug\Dal.dll
+C:\Users\user1\Desktop\התיקיה שלי\תכנות\פרויקט גמר\צד שרת\Dal\obj\Debug\Dal.pdb

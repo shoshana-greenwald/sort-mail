@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bll.BuildStructs.BuildWordsStruct" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABAAAgAECAAEABAAiAAABAAAAAAgAAAAAAABQ=</HashCode>
+      <FileName>BuildStructs\BuildWordsStruct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.BuildStructs.WordForSub" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>BuildStructs\BuildWordsStruct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.BuildStructs.semilarWordForSub" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAEAACAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuildStructs\BuildWordsStruct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.BuildStructs.FindNode" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAEEAgAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>BuildStructs\FindNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.ChiSquare" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABA=</HashCode>
+      <FileName>ChiSquare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.Statistic" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChiSquare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.EmailsData" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>EmailsData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.Data" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EmailsData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.FindRelatedSentence" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FindRelatedSentence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.FindSubject" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIAAAAAQAAAAAgAAAAAQAAAACAAAAAAAAA=</HashCode>
+      <FileName>FindSubject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.HebrewNlp" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACBAAAAAAAAAAAAAAgAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>HebrewNlp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.OutlookConnecting" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>OutlookConnecting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.Synonyms" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Synonyms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.UpdateCommonWords" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAIEAAAgAAAAEAAAAAA=</HashCode>
+      <FileName>UpdateCommonWords.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.BinaryNode" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAEAAAAAAAAAAAQAAAAAAAAAABCACAAAAAAAA=</HashCode>
+      <FileName>UpdateCommonWords.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.BinaryTree" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UpdateCommonWords.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.UpdateInDB" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UpdateInDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.ClassDB" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DBLBRgIDUQAAEhFAAgAwIAMAICAEYALgEEpSYAVTLAk=</HashCode>
+      <FileName>ClassDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bll.Validation" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

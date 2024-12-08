@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cddb68d8b0ad43b68becd049c3f26ff1" Name="Diagram1">
+        <EntityTypeShape EntityType="TextClassificationProjectModel.AlgorithmMistake_tbl" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.BaseWord_tbl" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.ContactForSubject_tbl" Width="1.5" PointX="5.25" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.ContactMan_tbl" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.Email_tbl" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.Subject_tbl" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.UpdateKeySentence_tbl" Width="1.5" PointX="7.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.UpdateKeySentenceForSemilar_tbl" Width="1.5" PointX="10.5" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.UpdateSubject_tbl" Width="1.5" PointX="7.5" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.User_tbl" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.Word_tbl" Width="1.5" PointX="6" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TextClassificationProjectModel.WordForSubject_tbl" Width="1.5" PointX="8.25" PointY="14.25" IsExpanded="true" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__Algorithm__newSu__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__Algorithm__oldSu__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__ContactFo__conta__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__ContactFo__subje__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__Email_tbl__subje__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__Email_tbl__toUse__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__UpdateKey__mailI__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__UpdateKey__mailI__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__UpdateSub__mailI__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__Subject_t__paren__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__Subject_t__userI__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__UpdateKey__subje__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__UpdateKey__subje__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__WordForSu__subje__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="TextClassificationProjectModel.FK__WordForSu__wordI__2F10007B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

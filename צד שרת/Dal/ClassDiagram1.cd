@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Dal.TextClassificationProjectEntities" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAQAAAAAAAAAAAAAACAAEAABICgBAACCAIAAAAA=</HashCode>
+      <FileName>Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.AlgorithmMistake_tbl" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAABAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAgA=</HashCode>
+      <FileName>AlgorithmMistake_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.BaseWord_tbl" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>BaseWord_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.ContactForSubject_tbl" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAEAAAAAAAAAAAAAAAAAAIAgBAAAAAAAAAgA=</HashCode>
+      <FileName>ContactForSubject_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.ContactMan_tbl" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEgAAAAAAAAAAAAICAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContactMan_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.Email_tbl" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAACQAQAAAQAAAAAAAQAgAAQAAAAKBIAAABIAAAAA=</HashCode>
+      <FileName>Email_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.Subject_tbl" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAAQAAAAAAAAACAAAgCAAAAABACCBIACAAIAAAAA=</HashCode>
+      <FileName>Subject_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.UpdateKeySentence_tbl" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAABAAAAAAAAAAAAACAAAAAAAAABIAAgAAAACgA=</HashCode>
+      <FileName>UpdateKeySentence_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.UpdateKeySentenceForSemilar_tbl" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQAAABAAAAAAAAAAQAACAAACAAAAABIAAAIAAAAgA=</HashCode>
+      <FileName>UpdateKeySentenceForSemilar_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.UpdateSubject_tbl" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAACAAAAAAgAAAIAAAAAAAAgA=</HashCode>
+      <FileName>UpdateSubject_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.User_tbl" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAACAAAACAAAAAAAAABAAAAAAAAAAE=</HashCode>
+      <FileName>User_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.Word_tbl" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Word_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dal.WordForSubject_tbl" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAiACAACgA=</HashCode>
+      <FileName>WordForSubject_tbl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
