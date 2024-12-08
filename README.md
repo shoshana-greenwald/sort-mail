@@ -145,5 +145,6 @@
 
 המשך פירוט האלגוריתם מוצג בספר פרויקט המצורף.
 
+[ספר פרויקט SORT-MAIL.pdf](https://github.com/user-attachments/files/18052596/SORT-MAIL.pdf)
 
 
