@@ -103,7 +103,7 @@ namespace Bll
         //מתחברת לספריה ומחזירה רשימה של הטקסט מחולק למשפטים
         public static List<string> SpliteToSentences(string words)
         {
-            HebrewNLP.HebrewNLP.Password = "WDJRaXffsbzRu4q";
+            HebrewNLP.HebrewNLP.Password = "YOUR_PASSWORD";   // אתה צריך להכניס לכאן את הסיסמה האישית שלך לחשבון 
             //שליחה לפומקציה שמחלקת טקסט למשפטים
             List<string> sentencesList = HebrewNLP.Sentencer.Sentences(words);
             return sentencesList;
